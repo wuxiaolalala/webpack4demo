@@ -1,0 +1,14 @@
+{
+  "presets": [
+    ["@babel/preset-env", 
+      {
+        "targets": {
+          "chrome":"67" // 设定浏览器版本，如果这样设置67可以支持es6语法，就不用转es5了，不用引入方法了
+        },
+        "useBuiltIns":"usage" // 用到的才打包到代码里，没用到的不打包
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": ["@babel/plugin-syntax-dynamic-import"]
+}

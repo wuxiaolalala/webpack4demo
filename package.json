@@ -1,0 +1,56 @@
+{
+  "name": "webpack4demo",
+  "sideEffects": [
+    "*.css"
+  ],
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "http-server dist",
+    "dev": "webpack-dev-server --config ./build/webpack.common.js",
+    "build": "webpack --env.production --config ./build/webpack.common.js"
+  },
+  "author": "Wu Xiao",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/runtime": "^7.17.2",
+    "@babel/runtime-corejs2": "^7.17.2",
+    "@webpack-cli/serve": "^1.6.1",
+    "autoprefixer": "^10.4.2",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^1.0.1",
+    "css-loader": "^1.0.1",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^4.4.1",
+    "http-server": "^14.1.0",
+    "mini-css-extract-plugin": "^1.1.1",
+    "node-sass": "^4.6.1",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "postcss": "^8.4.7",
+    "postcss-loader": "^4.3.0",
+    "sass-loader": "^7.3.1",
+    "server": "^1.1.0-alpha.9",
+    "style-loader": "^1.1.1",
+    "url-loader": "^4.1.1",
+    "vue-loader": "^17.0.0",
+    "webpack": "^4.26.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.3.0",
+    "webpack-merge": "^5.8.0",
+    "workbox-webpack-plugin": "^6.5.1"
+  },
+  "dependencies": {
+    "core-js": "^2.6.12",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
